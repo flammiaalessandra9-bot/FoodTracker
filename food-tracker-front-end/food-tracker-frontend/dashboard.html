@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="navbar">
+    <div class="logo">📊 FreshTrack</div>
+    <div class="menu">
+        <a href="home.html">Home</a>
+        <a href="index.html">Prodotti</a>
+        <a href="dashboard.html">Dashboard</a>
+    </div>
+</div>
+
+<div class="container">
+
+    <h1>📊 Dashboard</h1>
+
+    <!-- STAT CARD -->
+    <div class="stats">
+
+        <div class="stat-card">
+            <h2 id="totali">0</h2>
+            <p>Prodotti totali</p>
+        </div>
+
+        <div class="stat-card">
+            <h2 id="scaduti">0</h2>
+            <p>Scaduti</p>
+        </div>
+
+        <div class="stat-card">
+            <h2 id="consumati">0</h2>
+            <p>Consumati</p>
+        </div>
+
+    </div>
+
+    <!-- GRAFICO -->
+    <div class="chart-container">
+        <canvas id="pieChart"></canvas>
+    </div>
+
+    <!-- SUGGERIMENTI -->
+    <div class="suggestions">
+        <h2>💡 Suggerimenti</h2>
+        <ul id="tips"></ul>
+    </div>
+
+</div>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>

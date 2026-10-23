@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Aggiungi Prodotto</title>
+<link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="logo">🥬 FreshTrack</div>
+
+    <div class="menu">
+        <a href="home.html">Home</a>
+        <a href="index.html">Prodotti</a>
+        <a href="#">Dashboard</a>
+    </div>
+</div>
+
+<!-- FORM -->
+<div class="container">
+
+    <div class="card">
+
+        <h2>➕ Nuovo Prodotto</h2>
+
+        <input id="nome" placeholder="Nome prodotto">
+
+        <select id="categoria">
+    <option value="Latticini">Latticini</option>
+    <option value="Carne">Carne</option>
+    <option value="Verdura">Verdura</option>
+    <option value="Frutta">Frutta</option>
+    <option value="Bevande">Bevande</option>
+    <option value="Cereali">Cereali</option>
+    <option value="Dolci">Dolci</option>
+    <option value="Snack">Snack</option>
+    <option value="Surgelati">Surgelati</option>
+</select>
+
+        <input id="quantita" type="number" placeholder="Quantità">
+
+        <input id="scadenza" type="date">
+
+        <button class="btn" onclick="addProduct()">Salva prodotto</button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

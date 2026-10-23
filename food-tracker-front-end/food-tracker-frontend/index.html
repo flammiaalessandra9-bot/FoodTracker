@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prodotti - FreshTrack</title>
+<link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="logo">🥬 FreshTrack</div>
+
+    <div class="menu">
+        <a href="home.html">Home</a>
+        <a href="index.html">Prodotti</a>
+        <a href="#">Dashboard</a>
+    </div>
+</div>
+
+<div class="container-products">
+
+    <h2>📦 Gestione prodotti</h2>
+    <p class="subtitle">Seleziona una categoria</p>
+
+    <div id="categoryView"></div>
+
+    <div id="productView" style="display:none;">
+        <button onclick="showCategories()">⬅ Torna alle categorie</button>
+        <div id="productList"></div>
+    </div>
+
+</div>
+
+<div id="productModal" class="modal">
+    <div class="modal-content">
+
+        <span onclick="closeModal()" class="close">&times;</span>
+
+        <h2 id="modalNome"></h2>
+
+        <ul id="modalDetails"></ul>
+
+        <textarea id="noteInput" placeholder="Aggiungi note..."></textarea>
+
+        <button onclick="saveNote()" class="btn">💾 Salva note</button>
+
+        <button onclick="removeOne()" class="btn">➖ Rimuovi 1</button>
+        <button onclick="deleteFull()" class="btn delete">❌ Elimina</button>
+
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
